@@ -1,15 +1,15 @@
 {
-  "name": "react-datasheet",
-  "version": "1.4.9",
+  "name": "react-datasheet-shenyinabcd",
+  "version": "1.4.10",
   "description": "Excel-like data grid for React",
   "repository": {
     "type": "git",
-    "url": "https://github.com/nadbm/react-datasheet.git"
+    "url": "https://github.com/shenyinabcd/react-datasheet-shenyinabcd"
   },
-  "author": "Nadim Islam",
+  "author": "Nadim Islam, Yin Shen",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/nadbm/react-datasheet/issues"
+    "url": "https://github.com/shenyinabcd/react-datasheet-shenyinabcd/issues"
   },
   "keywords": [
     "react-component",

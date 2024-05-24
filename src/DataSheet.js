@@ -54,8 +54,9 @@ export default class DataSheet extends PureComponent {
     this.isClearing = this.isClearing.bind(this);
     this.handleComponentKey = this.handleComponentKey.bind(this);
 
-    this.handleKeyboardCellMovement =
-      this.handleKeyboardCellMovement.bind(this);
+    this.handleKeyboardCellMovement = this.handleKeyboardCellMovement.bind(
+      this,
+    );
 
     this.defaultState = {
       start: {},
@@ -326,8 +327,12 @@ export default class DataSheet extends PureComponent {
     const currentCell = !noCellsSelected && this.props.data[start.i][start.j];
     const equationKeysPressed =
       [
-        187 /* equal */, 189 /* substract */, 190 /* period */, 107 /* add */,
-        109 /* decimal point */, 110,
+        187 /* equal */,
+        189 /* substract */,
+        190 /* period */,
+        107 /* add */,
+        109 /* decimal point */,
+        110,
       ].indexOf(keyCode) > -1;
 
     if (noCellsSelected || ctrlKeyPressed) {
@@ -575,9 +580,9 @@ export default class DataSheet extends PureComponent {
     document.addEventListener('mousedown', this.pageClick);
 
     // Cut, copy and paste event handlers
-    document.addEventListener('cut', this.handleCut);
-    document.addEventListener('copy', this.handleCopy);
-    document.addEventListener('paste', this.handlePaste);
+    // document.addEventListener('cut', this.handleCut);
+    // document.addEventListener('copy', this.handleCopy);
+    // document.addEventListener('paste', this.handlePaste);
   }
 
   onMouseOver(i, j) {
